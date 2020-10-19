@@ -1,5 +1,3 @@
-package com.xydiateam.xydia.util;
-
 /*
  * Author:GrieferPig
  * Last Modify: 10/19/2020
