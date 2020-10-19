@@ -9,6 +9,11 @@
  *      Log l = new Log(int logLevel);
  *          The logLevel is used as a filter organize levels of output.
  *
+ * Constants:
+ *      logLevel
+ *          This constant works as a filter. If one output's priority is below than this level,
+ *          then it would not be appeared in Logcat
+ *
  * Methods:
  *      i(String text);
  *          Write Info logs to Logcat.
@@ -18,6 +23,9 @@
  *
  *      e(String text);
  *          Write Error logs to Logcat.
+ *
+ *      setLogLevel(int logLevel);
+ *          Change the Log Level.
  *
  *
  * Usage Examples:
