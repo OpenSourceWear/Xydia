@@ -1,4 +1,4 @@
-package com.xydiateam.xydia;
+package com.xydiateam.xydia.util;
 
 /*
  * Author:GrieferPig
