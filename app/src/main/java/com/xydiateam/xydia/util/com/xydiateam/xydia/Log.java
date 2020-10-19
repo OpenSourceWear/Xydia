@@ -30,7 +30,6 @@ package com.xydiateam.xydia;
  *      l.setLogLevel(Log.ALERT);
  *
  *
- *
  */
 
 public class Log {
