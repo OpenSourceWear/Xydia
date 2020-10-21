@@ -23,7 +23,7 @@ android {
     sourceSets {
         main {
             java {
-                srcDirs 'src/main/java', 'src/main/java/util', 'src/main/java/view', 'src/main/java/com/xydiateam/xydia/util'
+                srcDirs 'src/main/java', 'src/main/java/util', 'src/main/java/view', 'src/main/java/com/xydiateam/xydia/util', 'src/main/java/com/xydiateam/xydia/app'
             }
         }
     }
