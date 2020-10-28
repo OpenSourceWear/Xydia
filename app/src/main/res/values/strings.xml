@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Xydia</string>
+    <string name="no_description">No Description</string>
+    <string name="no_author">No author</string>
 </resources>
