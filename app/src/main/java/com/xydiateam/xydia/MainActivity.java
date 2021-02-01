@@ -2,7 +2,8 @@ package com.xydiateam.xydia;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.provider.Settings;
+
+import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,12 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         App app = new App(this,"a", "9.9.9", "test", 666);
         Log l = new Log(Log.NONE);
-        l.i(app.getAppAuthor());
-        l.i(app.getAppDescription());
-        l.i(app.getAppDownloadLink());
-        l.i(app.getAppName());
-        l.i(app.getAppVersion());
-        app.setAppGenre(appGenre.ENTERTAINMENT);
-        l.i(app.getAppGenre());
+        Gson g = new Gson();
+        l.i(g.toJson(app));
     }
 }
