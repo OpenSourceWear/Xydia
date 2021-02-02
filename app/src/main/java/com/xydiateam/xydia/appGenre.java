@@ -1,3 +1,5 @@
+package com.xydiateam.xydia;
+
 /**
  * Author:GrieferPig
  * Last Modify: 10/19/2020
@@ -26,8 +28,6 @@
  *          the output of genre.
  *
  */
-
-package com.xydiateam.xydia;
 
 public class appGenre {
     public static int NONE = 0;
