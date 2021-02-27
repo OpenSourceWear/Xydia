@@ -1,11 +1,14 @@
 package com.xydiateam.xydia;
 
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class RepoItemGrabber {
     public static String grabTextFromUrl(String Url){
@@ -27,7 +30,8 @@ public class RepoItemGrabber {
         return line;
     }
 
-    public static String[] decodeTextToArray(){
-        return null;
+    public static ArrayList<App> grabRepoItems(){
+        //inherit the value of repo url in config.java
+        return new Gson().fromJson(grabTextFromUrl(config.repoUrl), ArrayList.class);
     }
 }
